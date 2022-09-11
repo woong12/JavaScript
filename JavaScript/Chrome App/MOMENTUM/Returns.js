@@ -27,6 +27,7 @@ const calculator = {
 };
 
 const plusResult = calculator.plus(2, 5);
+console.log(plusResult);
 const minusResult = calculator.minus(plusResult, 5);
 const divideResult = calculator.divide(2, minusResult);
 const multipleResult = calculator.multiple(divideResult, plusResult);
