@@ -6,3 +6,10 @@ ex) document.title = "hello" 를 하면 타이틀이 hello로 바뀜.
 */
 
 document.getElementById("title");
+
+const title = document.getElementById("title");
+
+title.innerText("Got you!");
+
+console.log(title.id);
+console.log(title.className);
