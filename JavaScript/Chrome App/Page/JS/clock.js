@@ -17,4 +17,4 @@ function getClock() {
 }
 
 getClock(); //00:00:00이 출력되지 않게 시간을 즉시 호출
-setInterval(getClock, 1000);
+setInterval(getClock, 1000); //1초마다 시간 출력
