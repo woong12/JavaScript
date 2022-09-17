@@ -4,10 +4,29 @@ canvas.width = 800;
 canvas.height = 800;
 ctx.lineWidth = 2;
 
-ctx.moveTo(200, 200);
+//그리기
+let isPainting = false;
+function onMove(event) {
+    if (isPainting) {
+        //isPainting이 참이라면 선을그리고 함수를 끝냄, 거짓이라면 브러쉬만 움직임
+        ctx.lineTo(event.offsetX, event.offsetY);
+        ctx.stroke();
+        return;
+    }
+    ctx.moveTo(event.offsetX, event.offsetY);
+}
+function startPainting() {
+    //클릭하면 참
+    isPainting = true;
+}
+function cancelPainting() {
+    isPainting = false;
+}
 
-ctx.lineTo(400, 400);
-ctx.stroke();
+canvas.addEventListener("mousemove", onMove);
+canvas.addEventListener("mousedown", startPainting);
+canvas.addEventListener("mouseup", cancelPainting);
+canvas.addEventListener("mouseleave", cancelPainting);
 
 //---------------------------------------------------------------------------------------
 //무지개 선 그리기 2
