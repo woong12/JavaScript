@@ -88,6 +88,7 @@ function onEraserClick() {
     ctx.strokeStyle = "white";
     isFilling = false;
     modeBtn.innerText = "Fill";
+    ctx.beginPath();
 }
 
 //파일 선택
