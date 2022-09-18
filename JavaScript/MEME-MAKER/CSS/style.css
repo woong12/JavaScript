@@ -83,8 +83,25 @@ input#file {
 input#text {
     all: unset;
     padding: 9px 0px;
-    border-radius: 10px;
+    border-radius: 15px;
     font-weight: 500;
     text-align: center;
     background-color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+span {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-color: royalblue;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    margin-top: -10px;
+    margin-bottom: -15px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.5), 0 1px 3px rgba(0, 0, 0, 0.5);
 }

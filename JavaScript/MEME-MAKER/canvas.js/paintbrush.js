@@ -110,7 +110,7 @@ function onDoubleClick(event) {
     if (text !== "") {
         ctx.save();
         ctx.lineWidth = 1;
-        ctx.font = "68px serif";
+        ctx.font = "40px lucida sans";
         ctx.fillText(text, event.offsetX, event.offsetY);
         ctx.restore(); //저장하기 전으로 돌아감
     }
