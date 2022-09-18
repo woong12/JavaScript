@@ -1,7 +1,11 @@
+const colorOptions = Array.from(
+    document.getElementsByClassName("color-option")
+);
 const color = document.getElementById("color");
 const lineWidth = document.getElementById("line-width");
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
+
 canvas.width = 800;
 canvas.height = 800;
 ctx.lineWidth = lineWidth.value;
@@ -30,8 +34,17 @@ function onLineWidthChange(event) {
 }
 
 function onColorChange(event) {
+    //색 변경
     ctx.strokeStyle = event.target.value;
     ctx.fillStyle = event.target.value;
+    ctx.beginPath();
+}
+
+function onColorClick(event) {
+    const colorValue = event.target.dataset.color;
+    ctx.strokeStyle = colorValue;
+    ctx.fillStyle = colorValue;
+    color.value = colorValue;
     ctx.beginPath();
 }
 
@@ -43,6 +56,15 @@ canvas.addEventListener("mouseleave", cancelPainting);
 lineWidth.addEventListener("change", onLineWidthChange);
 color.addEventListener("change", onColorChange);
 
+colorOptions.forEach((color) => color.addEventListener("click", onColorClick));
+
+//
+//
+//
+//
+//
+//
+//
 //---------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------
 //무지개 선 그리기 2
