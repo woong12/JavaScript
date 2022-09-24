@@ -23,9 +23,36 @@
 
 // const mathScore = prompt("수학 점수?");
 // const engScore = prompt("영어 점수?");
+//o/p = 4540
+// prompt 입력 =  문자형
+// 90 + 80 = 9080 / 2= 4540
+// 나누기는 자동 형변환 때문에 재대로 작동
 
-const mathScore = 90;
-const engScore = 80;
-const result = (mathScore + engScore) / 2;
+// const mathScore = 90;
+// const engScore = 80;
+// //o/p = 85
 
-console.log(result);
+// const result = (mathScore + engScore) / 2;
+
+// console.log(result);
+
+// 명시적 형변환
+
+// String() = 문자형으로 변환
+
+// Number() = 숫자형으로 변환
+
+// Boolean() = 불린형으로 변환
+
+//________________________________________________________________________________________
+
+// console.log(10 === 5);
+// console.log(10 == 5);
+
+// const a = 1;
+// const b = "1";
+
+// console.log(a == b);
+// console.log(a === b); //일치 연산자
+// // ===는 타입까지 비교
+// // ==보다 ===을 쓰는게 좋음
