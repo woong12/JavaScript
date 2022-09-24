@@ -9,39 +9,45 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <header>
-            <h1>To-Do List</h1>
-            <form id="new-todo-form">
-                <input
-                    type="text"
-                    id="new-todo-input"
-                    placeholder="What do you have planned?"
-                />
-                <input type="submit" id="new-todo-submit" value="Add To-Do" />
-            </form>
-        </header>
+        <span>
+            <header>
+                <h1>To-Do List</h1>
+                <form id="new-todo-form">
+                    <input
+                        type="text"
+                        id="new-todo-input"
+                        placeholder="오늘 할 일은 무엇인가요?"
+                    />
+                    <input
+                        type="submit"
+                        id="new-todo-submit"
+                        value="Add To-Do"
+                    />
+                </form>
+            </header>
 
-        <main>
-            <section class="todo-list">
-                <h2>To-Do</h2>
-                <div id="todos">
-                    <!-- <div class="todo">
-                        <div class="content">
-                            <input
-                                type="text"
-                                class="text"
-                                value="My todo"
-                                readonly
-                            />
-                        </div>
-                        <div class="actions">
-                            <button class="edit">Edit</button>
-                            <button class="delete">Delete</button>
-                        </div>
-                    </div> -->
-                </div>
-            </section>
-        </main>
+            <main>
+                <section class="todo-list">
+                    <h2>ToDo</h2>
+                    <div id="todos">
+                        <!-- <div class="todo">
+                            <div class="content">
+                                <input
+                                    type="text"
+                                    class="text"
+                                    value="My todo"
+                                    readonly
+                                />
+                            </div>
+                            <div class="actions">
+                                <button class="edit">Edit</button>
+                                <button class="delete">Delete</button>
+                            </div>
+                        </div> -->
+                    </div>
+                </section>
+            </main>
+        </span>
         <script src="main.js"></script>
     </body>
 </html>

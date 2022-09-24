@@ -14,12 +14,22 @@
     font-family: "Fira sans", sans-serif;
 }
 
+span {
+    width: 900px;
+    height: 900px;
+    background-color: cornsilk;
+    box-shadow: 5px 5px 5px #111827;
+    border-radius: 50px;
+}
+
 body {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     min-height: 100vh;
     color: #fff;
-    background-color: var(--dark);
+    background-color: floralwhite;
 }
 
 header {
@@ -34,8 +44,8 @@ header h1 {
     display: flex;
     justify-content: center;
     font-size: 2.5rem;
-    font-weight: 300;
-    color: var(--grey);
+    font-weight: 600;
+    color: black;
     margin-bottom: 1rem;
 }
 
@@ -67,9 +77,9 @@ button {
 
 #new-todo-submit {
     color: var(--pink);
-    font-size: 1.25rem;
+    font-size: 25px;
     font-weight: 700;
-    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    background-image: linear-gradient(to right, cornflowerblue, blueviolet);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
@@ -97,8 +107,8 @@ main {
 
 .todo-list h2 {
     font-size: 1.5rem;
-    font-weight: 300;
-    color: var(--grey);
+    font-weight: 700;
+    color: black;
     margin-bottom: 1rem;
 }
 
