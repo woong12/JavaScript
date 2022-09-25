@@ -21,8 +21,11 @@
 }
 
 span {
-    height: 900px;
+    height: 935px;
     width: 480px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: var(--shadow);
 }
 
 input:not([type="radio"]):not([type="checkbox"]),
