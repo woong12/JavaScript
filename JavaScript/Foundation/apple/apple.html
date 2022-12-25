@@ -13,15 +13,15 @@
                 <p id="info">Alert 박스</p>
                 <input id="code" class="id" type="text" />
                 <input id="code2" class="pwd" type="password" />
-                <button onclick="알림창닫기('none')">닫기</button>
+                <button class="cb" id="close">닫기</button>
             </div>
         </div>
-        <button onclick="알림창1열기()">버튼1</button>
-        <button onclick="알림창2열기()">버튼2</button>
+        <div class="btnbox">
+            <button class="btn" onclick="알림창1열기()">버튼1</button>
+            <button class="btn" onclick="알림창2열기()">버튼2</button>
+        </div>
 
         <script>
-            //파라미터
-
             function 알림창1열기() {
                 document.getElementById("info").innerHTML =
                     "아이디를 입력하세요";
@@ -38,11 +38,21 @@
                 document.getElementById("code").style.display = "none";
             }
 
+            /*
             function 알림창닫기(파라미터) {
                 document.getElementById("alert").style.display = 파라미터;
                 document.getElementById("code").value = "";
                 document.getElementById("code2").value = "";
             }
+            */
+
+            document
+                .getElementById("close")
+                .addEventListener("click", function () {
+                    document.getElementById("alert").style.display = "none";
+                    document.getElementById("code").value = "";
+                    document.getElementById("code2").value = "";
+                });
         </script>
     </body>
 </html>

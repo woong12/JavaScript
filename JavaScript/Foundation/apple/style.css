@@ -1,11 +1,17 @@
 * {
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
 }
 
 .alert-box {
     background: rgb(69, 69, 145);
     color: rgb(223, 223, 226);
     padding: 20px;
+    position: relative;
+    margin-left: 200px;
+    margin-right: 200px;
     border-radius: 10px;
     display: none;
 }
@@ -16,6 +22,16 @@
     align-items: center;
     justify-content: center;
 }
+.btn {
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    margin: 0px -500px 0px -500px;
+    background-color: rgb(192, 78, 63);
+}
 
 .id {
     display: none;
@@ -23,4 +39,26 @@
 
 .pwd {
     display: none;
+}
+
+.cb {
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: none;
+    font-weight: 700;
+    color: blueviolet;
+    cursor: pointer;
+}
+
+p {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.btnbox {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
 }
