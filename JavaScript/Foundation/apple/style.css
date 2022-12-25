@@ -1,7 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
 .alert-box {
     background: rgb(69, 69, 145);
     color: rgb(223, 223, 226);
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
+    display: none;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.id {
+    display: none;
+}
+
+.pwd {
     display: none;
 }

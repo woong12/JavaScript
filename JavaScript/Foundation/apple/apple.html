@@ -9,18 +9,39 @@
     </head>
     <body>
         <div class="alert-box" id="alert">
-            <p>Alert 박스</p>
-            <button onclick="알림창닫기()">닫기</button>
+            <div class="login">
+                <p id="info">Alert 박스</p>
+                <input id="code" class="id" type="text" />
+                <input id="code2" class="pwd" type="password" />
+                <button onclick="알림창닫기('none')">닫기</button>
+            </div>
         </div>
-        <button onclick="알림창열기()">버튼</button>
+        <button onclick="알림창1열기()">버튼1</button>
+        <button onclick="알림창2열기()">버튼2</button>
 
         <script>
-            function 알림창열기() {
+            //파라미터
+
+            function 알림창1열기() {
+                document.getElementById("info").innerHTML =
+                    "아이디를 입력하세요";
                 document.getElementById("alert").style.display = "block";
+                document.getElementById("code").style.display = "block";
+                document.getElementById("code2").style.display = "none";
             }
 
-            function 알림창닫기() {
-                document.getElementById("alert").style.display = "none";
+            function 알림창2열기() {
+                document.getElementById("info").innerHTML =
+                    "비밀번호를 입력하세요";
+                document.getElementById("alert").style.display = "block";
+                document.getElementById("code2").style.display = "block";
+                document.getElementById("code").style.display = "none";
+            }
+
+            function 알림창닫기(파라미터) {
+                document.getElementById("alert").style.display = 파라미터;
+                document.getElementById("code").value = "";
+                document.getElementById("code2").value = "";
             }
         </script>
     </body>
