@@ -61,4 +61,9 @@ p {
     display: flex;
     margin-top: 50px;
     justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.yellow-bg {
+    background: yellow;
 }

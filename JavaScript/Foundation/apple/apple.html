@@ -6,6 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="stylesheet" href="style.css" />
+
+        <!-- jQuery CDN -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body>
         <div class="alert-box" id="alert">
@@ -20,6 +27,9 @@
             <button class="btn" onclick="알림창1열기()">버튼1</button>
             <button class="btn" onclick="알림창2열기()">버튼2</button>
         </div>
+
+        <h3>jQuery</h3>
+        <h4 id="test">안녕하세요</h4>
 
         <script>
             function 알림창1열기() {
@@ -53,6 +63,15 @@
                     document.getElementById("code").value = "";
                     document.getElementById("code2").value = "";
                 });
+
+            //jQuery
+            // document.querySelectorAll("#test")[0];
+            // document.getElementById("test").innerHTML = "???";
+            //=
+            $("#test").html("안녕");
+            $("#test").css("color", "red");
+            $("#test").attr("src", "asdf.jpg");
+            $("#test").addClass("yellow-bg");
         </script>
     </body>
 </html>
